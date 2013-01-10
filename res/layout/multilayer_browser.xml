@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Browser -->
+	<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+		android:layout_height = "wrap_content" 
+		android:layout_width = "fill_parent"
+		android:id="@+id/menu_l_browser"
+		android:orientation="horizontal">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:text="Explorer"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_explorer"
+					android:gravity="center"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_explorer"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Firefox"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_firefox"
+					android:textSize="12dip"
+					android:gravity="center"
+					android:drawableTop="@drawable/multilayer_firefox"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Chrome"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_chrome"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_chrome"
+					android:gravity="center"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:text="Safari"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_safari"
+					android:gravity="center"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_safari"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Netscape"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_netscape"
+					android:textSize="12dip"
+					android:gravity="center"
+					android:drawableTop="@drawable/multilayer_netscape"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Opera"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_opera"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_opera"
+					android:gravity="center"
+					/>
+			</LinearLayout>
+		</LinearLayout>	    
+	</LinearLayout>
+</LinearLayout >

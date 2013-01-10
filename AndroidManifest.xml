@@ -1,0 +1,193 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.sinoace.anim"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnimMainActivity"
+            android:label="@string/anim_main" >
+        </activity>
+        <activity
+            android:name=".UIMainActivity"
+            android:label="@string/anim_main" >
+        </activity>
+        <activity android:name="net.sinoace.ui.path.PathButtonActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.radiogroup.RelativeRadioGroupActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.waterfall.WaterfallMainActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.multilayer.MultiLayerMenuActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.drawroll.DrawRollActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.qqtab.QqtabActivity" >
+        </activity>
+        <activity
+            android:name="net.sinoace.anima.activityswitch.Activity1"
+            android:label="@string/anim_main" >
+        </activity>
+        <activity
+            android:name="net.sinoace.anima.activityswitch.Activity2"
+            android:label="@string/anim_main" >
+        </activity>
+        <activity android:name="net.sinoace.ui.viewpager.ViewPagerActivity" >
+        </activity>
+        <activity
+            android:name="net.sinoace.anim.drawableanimation.FrameAnimActivity"
+            android:label="@string/frame_anim" >
+        </activity>
+        <activity
+            android:name="net.sinoace.anim.tweenanimation.TweenAnimMainActivity"
+            android:label="@string/tween_anim" >
+        </activity>
+        <activity
+            android:name="net.sinoace.anim.tweenanimation.TweenAnimActivity"
+            android:label="@string/tween_anim" >
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.photostore.Gallery"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.photostore.GridImageView"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="net.sinoace.ui.photostore.ImageSwitcher"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.sinoace.ui.lancher3d.Launcher3dMainActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.lancher3d.Launcher3dFirstActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.lancher3d.Launcher3dSecondActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.lancher3d.Launcher3dThirdActivity" >
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.lockscreen.BitmapLockScrActivity"
+            android:label="@string/lockscreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="net.sinoace.ui.lockscreen.BitmapLockService" >
+        </service>
+
+        <receiver android:name="net.sinoace.ui.lockscreen.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="net.sinoace.ui.pickview.WheelDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.pickview.TimeActivity"
+            android:label="Time" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="kankan.wheel.WHEEL_SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.pickview.PasswActivity"
+            android:label="Password" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="kankan.wheel.WHEEL_SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.pickview.CitiesActivity"
+            android:label="Cities" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="kankan.wheel.WHEEL_SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sinoace.ui.pickview.EmptyActivity"
+            android:label="Empty wheel" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="kankan.wheel.WHEEL_SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.sinoace.ui.ucweb.UcwebDemoActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.coverflow.CoverFlowActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.bookpage.BookpageActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.bookshelf.BookshelfReaderActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.bubblechat.ChatActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.loadingview.LoadingViewMainActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.qqlogin.QqLoginActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.qiyi.QiyiMainActivity" >
+        </activity>
+        <activity android:name="net.sinoace.ui.qiyi.AccountActivity" />
+        <activity android:name="net.sinoace.ui.qiyi.ChannelActivity" />
+        <activity android:name="net.sinoace.ui.qiyi.SearchActivity" />
+        <activity android:name="net.sinoace.ui.qiyi.HomeActivity" />
+        <activity android:name="net.sinoace.ui.qiyi.MoreActivity" />
+        <activity android:name="net.sinoace.ui.listviewgridview.ListViewActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>

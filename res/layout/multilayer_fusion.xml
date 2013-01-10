@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fusion -->
+	<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+		android:layout_height = "wrap_content" 
+		android:layout_width = "fill_parent"
+		android:id="@+id/menu_l_fusion"
+		android:orientation="horizontal">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:text="Dreamweaver"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_dreamweaver"
+					android:gravity="center"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_dreamweaver"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Flash"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_flash"
+					android:textSize="12dip"
+					android:gravity="center"
+					android:drawableTop="@drawable/multilayer_flash"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Illustrator"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_illustrator"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_illustrator"
+					android:gravity="center"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:text="InDesign"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_indesign"
+					android:gravity="center"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_indesign"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Premiere"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_premiere"
+					android:textSize="12dip"
+					android:gravity="center"
+					android:drawableTop="@drawable/multilayer_premiere"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Version"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_version"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_version"
+					android:gravity="center"
+					/>
+			</LinearLayout>
+		</LinearLayout>	    
+	</LinearLayout>
+</LinearLayout >

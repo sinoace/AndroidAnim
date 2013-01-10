@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/selected"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/ic_action_search"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/ic_action_search"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/ic_action_search" 
+        android:duration="1000"/>
+
+</animation-list>

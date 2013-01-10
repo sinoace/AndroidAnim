@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e1e1e1"
+    android:orientation="vertical" >
+
+    <net.sinoace.ui.loadingview.LoadingView
+        android:id="@+id/main_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="190dp"
+        android:src="@drawable/loader_frame_1" >
+    </net.sinoace.ui.loadingview.LoadingView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:text="启动中..."
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+</LinearLayout>

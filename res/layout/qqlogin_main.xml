@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 插入整个布局的背景图片 -->
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  
+    android:background="@drawable/qqlogin_back"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"> 
+    <!-- QQ登录界面最上面的图片 -->
+   	<ImageView 
+    	android:id="@+id/image"
+    	android:src="@drawable/qqlogin_qq"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	/>  
+    <!-- 水平布局，包括QQ头像和输入信息的账号和密码 -->
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">    
+    	<!-- QQ头像，插入图片，重心垂直居中,四周扩充3个像素 -->	  
+    	<ImageView 
+    		android:id="@+id/head"
+    		android:src="@drawable/qqlogin_head"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:padding="3dip"
+    		android:layout_gravity="center_vertical"
+    	/> 
+    	<!-- 表格布局，包括账号和密码 -->
+    	<TableLayout 
+    		android:id="@+id/loginInfo"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">
+    		<!-- 表格的第一行，账号文本和输入框，黑色粗体字，重心靠右，四周扩充5个像素 -->
+    		<TableRow>
+    			<!-- "账号"文本 -->
+    			<TextView 
+    				android:text="账号:"    				
+    				android:textStyle="bold"
+    				android:textColor="#000000"
+    				android:gravity="right"    
+    				android:padding="5dip"  					
+    			/>       			
+    			<!-- "账号"输入框，文本超出TextView的宽度的情况下，出现横拉条   -->
+    			<EditText 
+    				android:id="@+id/username"
+    				android:scrollHorizontally="true"     				
+    			/>
+    		</TableRow>
+    		<!-- 表格的第二行，密码和密码输入框，黑色粗体字，重心靠右，扩充5个像素 -->
+    		<TableRow>
+    			<!-- "密码"文本 -->
+    			<TextView 
+    				android:text="密码:"    				
+    				android:textStyle="bold"
+    				android:textColor="#000000"
+    				android:gravity="right"    
+    				android:padding="5dip" 				
+    			/>
+    			<!-- "密码"输入框；文本超出TextView的宽度的情况下，出现横拉条  -->
+    			<EditText 
+    				android:id="@+id/username"
+    				android:password="true"
+    				android:scrollHorizontally="true"  
+    			/>
+    		</TableRow>
+    	</TableLayout>    	
+    </LinearLayout>
+    <!-- 相对布局，"记住密码"按钮和"自动登录"按钮 -->
+    <RelativeLayout 
+    	android:id="@+id/loginSet"    
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent">
+    	<!-- "记住密码"多选框，黑体字，左缩进5个像素，选中状态 -->
+        <CheckBox         	
+        	android:id="@+id/rememberPassword" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:text="记住密码" 
+        	android:textColor="#000000"
+        	android:checked="true"
+        	android:layout_marginLeft="5dip"
+        	/>
+        <!-- "自动登录"多选框，黑体字，右缩进5个像素，与"记住密码"按钮的顶部和右边对齐 -->
+        <CheckBox 
+        	android:id="@+id/autoLogin" 
+        	android:layout_width="wrap_content" 
+        	android:text="自动登录" 
+        	android:textColor="#000000"
+        	android:layout_height="wrap_content" 
+        	android:layout_marginRight="5dip"
+        	android:layout_alignParentTop="true" 
+        	android:layout_alignParentRight="true"/>    	
+    </RelativeLayout>
+    <!-- "登录"按钮，重心垂直居中，距顶部和底部3个像素，左右扩充80个像素 -->
+    <Button 
+    	android:id="@+id/login_bt"
+    	android:text="登  录 "
+    	android:paddingTop="3dip"
+    	android:paddingBottom="3dip"
+    	android:paddingLeft="80dip"
+    	android:paddingRight="80dip"    	
+    	android:layout_width="wrap_content"    
+    	android:layout_height="wrap_content"    	
+    	android:layout_gravity="center_horizontal" 
+    	/>   	
+    <!-- 绝对布局，"隐身登录"按钮和"开机振动"按钮以下部分，距顶部3个像素 -->	
+    <RelativeLayout 
+    	android:id="@+id/loginSet"    
+    	android:layout_width="fill_parent"
+    	android:layout_marginTop="3dip" 
+    	android:layout_height="fill_parent">
+    	<!-- "隐身登录"按钮，左缩进5个像素，黑字体，选中状态 -->
+        <CheckBox         	
+        	android:id="@+id/hidingLogin" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dip"
+        	android:text="隐身登录" 
+        	android:textColor="#000000"
+        	android:checked="true"
+        	/>
+        <!-- "开机振动"按钮，右缩进5个像素，黑字体，选中状态 ，与"隐身登录"按钮的顶部和右边对齐-->
+        <CheckBox 
+        	android:id="@+id/startVibrate" 
+        	android:layout_width="wrap_content" 
+        	android:text="开机振动" 
+        	android:layout_marginRight="5dip"
+        	android:textColor="#000000"
+        	android:layout_height="wrap_content" 
+        	android:layout_alignParentTop="true" 
+        	android:layout_alignParentRight="true"/>    
+        <!-- "接收群消息"按钮，左缩进5个像素，黑字体，选中状态 ，在"隐身登录"按钮的下面-->
+        <CheckBox 
+        	android:id="@+id/receiveGroupMessage" 
+        	android:layout_width="wrap_content" 
+        	android:text="接收群消息" 
+        	android:layout_marginLeft="5dip"
+        	android:textColor="#000000"
+        	android:layout_height="wrap_content" 
+        	android:layout_below="@id/hidingLogin"
+        	android:checked="true"/>
+        <!-- "静音登录"按钮，右缩进5个像素，黑体字，选中状态，在"开机振动"按钮的下面，靠右 -->
+        <CheckBox 
+        	android:id="@+id/silenceLogin" 
+        	android:textColor="#000000" 
+        	android:layout_width="wrap_content" 
+        	android:text="静音登录" 
+        	android:layout_marginRight="5dip"
+        	android:layout_height="wrap_content" 
+        	android:layout_below="@+id/startVibrate" 
+        	android:layout_alignParentRight="true"
+        	android:checked="true"/>
+        <!-- "菜单"按钮，距离底部2个像素，上下扩充3个像素，左右扩充20个像素，与"接收群消息"按钮左对齐，底部对齐 -->
+        <Button 
+        	android:id="@+id/menu" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="菜  单" 
+        	android:paddingTop="3dip"
+    		android:paddingBottom="3dip"
+    		android:paddingLeft="10dip"
+    		android:paddingRight="10dip"  
+    		android:layout_marginBottom="2dip"
+        	android:layout_alignParentBottom="true" 
+        	android:layout_alignLeft="@+id/receiveGroupMessage"/>
+    </RelativeLayout>           
+</LinearLayout>

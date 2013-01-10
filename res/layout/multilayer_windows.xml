@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Windows -->
+	<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+		android:layout_height = "wrap_content" 
+		android:layout_width = "fill_parent"
+		android:id="@+id/menu_l_windows"
+		android:orientation="horizontal">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:text="Word"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_word"
+					android:gravity="center"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_word"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Excel"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_excel"
+					android:textSize="12dip"
+					android:gravity="center"
+					android:drawableTop="@drawable/multilayer_excel"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Publisher"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_publisher"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_publisher"
+					android:gravity="center"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:text="Outlook"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_outlook"
+					android:gravity="center"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_outlookexpress"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Frontpage"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_frontpage"
+					android:textSize="12dip"
+					android:gravity="center"
+					android:drawableTop="@drawable/multilayer_frontpage"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height = "wrap_content"
+				android:layout_width = "match_parent" 
+				android:layout_weight="1"
+				android:gravity="center" 
+				android:orientation="horizontal">
+				<Button 
+					android:text="Access"
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content" 
+					android:id = "@+id/menu_access"
+					android:textSize="12dip"
+					android:drawableTop="@drawable/multilayer_access"
+					android:gravity="center"
+					/>
+			</LinearLayout>
+		</LinearLayout>	    
+	</LinearLayout>
+</LinearLayout >

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- menu bottom navigator -->
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+	android:layout_height = "wrap_content" 
+	android:layout_width = "fill_parent" 
+	android:id="@+id/menu_l_main"
+	android:orientation="horizontal">
+	<!-- Browser -->
+	<LinearLayout
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent" 
+		android:layout_weight="1"
+		android:gravity="center"
+		android:orientation="horizontal">
+		<Button
+			android:text="Browser"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content" 
+			android:id = "@+id/menu_browser"
+			android:gravity="center"
+			android:textSize="12dip"
+			android:drawableTop="@drawable/multilayer_m_direct"
+			/>
+	</LinearLayout>
+	<!-- Windows -->
+	<LinearLayout
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent" 
+		android:layout_weight="1"
+		android:gravity="center" 
+		android:orientation="horizontal">
+		<Button 
+			android:text="Windows"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content" 
+			android:id = "@+id/menu_windows"
+			android:textSize="12dip"
+			android:gravity="center"
+			android:drawableTop="@drawable/multilayer_windows"
+			/>
+	</LinearLayout>
+	<!-- Fusion -->
+	<LinearLayout
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent" 
+		android:layout_weight="1"
+		android:gravity="center" 
+		android:orientation="horizontal">
+		<Button 
+			android:text="Fusion"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content" 
+			android:id = "@+id/menu_fusion"
+			android:textSize="12dip"
+			android:drawableTop="@drawable/multilayer_star"
+			android:gravity="center"
+			/>
+	</LinearLayout>
+</LinearLayout >

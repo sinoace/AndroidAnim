@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!-- 
+    <com.cn.ScrollLayout android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:id="@+id/root"
+    	android:layout_above="@+id/button_layout">
+    </com.cn.ScrollLayout>
+   
+ -->
+ 
+    <net.sinoace.ui.lancher3d.Launcher3dScrollLayout android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:id="@+id/root"
+    	android:layout_above="@+id/button_layout">
+    </net.sinoace.ui.lancher3d.Launcher3dScrollLayout>
+</RelativeLayout>

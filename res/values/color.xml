@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <drawable name="white">#FFFFFFFF</drawable>
+  <drawable name="black">#000000</drawable>
+  <drawable name="blue">#0000FF</drawable>
+  <color name="selector_color">#ff0000</color>
+    <color name="no_selector">#ffffff</color>
+</resources>
